@@ -3,7 +3,7 @@
 % Paquetes de idioma y codificación
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[spanish]{babel}  % Ajusta el idioma del documento a español.
+\usepackage[spanish, es-tabla]{babel}  % Ajusta el idioma del documento a español.
 \usepackage{tabularx}  % Permite la creación de tablas con ancho ajustable.
 
 % Paquete de geometría para configurar márgenes y tamaño de papel
@@ -194,7 +194,7 @@ Para poder calcular la fuerza en las barras del enrejado, lo que se hizo primero
 \subsection{Resultados Método Manual}
 \begin{table}[h!]
   \centering
-  \begin{tabular}{|c|c|}
+  \begin{tabular}{cc}
   \hline
   \textbf{Miembro} & \textbf{Fuerza axial (kN)} \\
   \hline
@@ -225,7 +225,7 @@ Luego de calcular las fuerzas axiales, se procedió a determinar la geometría d
 
 \begin{table}[h!]
   \centering
-  \begin{tabular}{|c|c|c|c|c|}
+  \begin{tabular}{ccccc}
   \hline
   \textbf{Tipo de barra} & \textbf{Diámetro exterior (mm)} & \textbf{Espesor (mm)} & \textbf{Inercia (mm\(^4\))} & \textbf{Área (mm²)} \\
   \hline
@@ -283,7 +283,7 @@ Lo primero que se hizo fue definir los nodos y las barras del enrejado. Luego, s
 \subsection{Resultados Código en OpenSees.py}
 \begin{table}[h!]
   \centering
-  \begin{tabular}{|c|c|}
+  \begin{tabular}{cc}
   \hline
   \textbf{Miembro} & \textbf{Fuerza axial (kN)} \\
   \hline
@@ -313,7 +313,7 @@ Lo primero que se hizo fue definir los nodos y las barras del enrejado. Luego, s
 
 \begin{table}[h!]
   \centering
-  \begin{tabular}{|c|c|c|}
+  \begin{tabular}{ccc}
   \hline
   \textbf{Nodo} & \textbf{ux (mm)} & \textbf{uy (mm)} \\
   \hline
@@ -342,7 +342,7 @@ Posteriormente, se procedió a plotear el enrejado sin desplazamientos y con des
   \label{fig:1}
 \end{figure}
 
-\newpage
+
 \section{Análisis de Resultados}
 Como se puede observar, los resultados obtenidos con el método manual y programado son prácticamente idénticos. Sin embargo, cuando se compara con el método de desplazamientos virtuales, se observa una diferencia en los desplazamientos en el Nodo D. Esto se puede observar en la siguiente tabla:
 
@@ -364,6 +364,8 @@ Aunque hay una diferencia entre los datos obtenidos con el Método de Desplazami
 \newpage
 
 \section{Conclusión}
+En conclusión, los resultados obtenidos entre el método manual de desplazamientos virtuales y el software OpenSees.py para calcular las fuerzas y desplazamientos en un enrejado son similares. Sin embargo, hay una diferencia en los desplazamientos en el Nodo D. Esta diferencia probablemente se debe a errores humanos al hacer los cálculos manuales en el método de desplazamientos virtuales. Esto demuestra que las herramientas computacionales como OpenSees.py son más precisas y confiables para este tipo de cálculos. Además, estas herramientas permiten ahorrar tiempo y esfuerzo al realizar cálculos complejos y repetitivos, lo que es fundamental en la ingeniería civil.
+
 
 
 \end{document}
