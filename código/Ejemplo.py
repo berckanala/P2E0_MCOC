@@ -20,24 +20,24 @@ nodes = np.array([[0, 0],
                  [36, 12],
                  [36, 4]])
 
-members = np.array([[1, 2], #1
-                   [1, 3], #2 A1
-                   [2, 3], #3
-                   [2, 4], #4
-                   [3, 4], #5
-                   [3, 5], #6 A1
-                   [4, 6], #7
-                   [4, 5], #8
-                   [5, 6], #9
-                   [5, 7], #10 A1
-                   [6, 7], #11
-                   [7, 9], #12
-                   [7, 8], #13 A1
-                   [8, 9], #14
-                   [8, 10], #15
-                   [9, 10], #16
-                   [8, 11], #17 A1
-                   [10, 11]]) #18
+members = np.array([[1, 2],  # 1
+                   [1, 3],  # 2 A1
+                   [2, 3],  # 3
+                   [2, 4],  # 4
+                   [3, 4],  # 5
+                   [3, 5],  # 6 A1
+                   [4, 6],  # 7
+                   [4, 5],  # 8
+                   [5, 6],  # 9
+                   [5, 7],  # 10 A1
+                   [6, 7],  # 11
+                   [7, 9],  # 12
+                   [7, 8],  # 13 A1
+                   [8, 9],  # 14
+                   [8, 10],  # 15
+                   [9, 10],  # 16
+                   [8, 11],  # 17 A1
+                   [10, 11]])  # 18
 
 # Parámetros del material y área
 E = 210e9  # Módulo de elasticidad en Pa
@@ -98,6 +98,9 @@ plotter = pv.Plotter(off_screen=True)  # Habilitar el modo off_screen para rende
 # Factor de escala para los desplazamientos
 xfact = 500  # Ajusta este valor según sea necesario
 
+# Lista para almacenar las magnitudes de desplazamiento en los miembros
+desplazamientos_magnitud = []
+
 # Dibujar estructura deformada y no deformada
 for mbr in members:
     node_i = int(mbr[0])
@@ -113,23 +116,36 @@ for mbr in members:
     ux_j = ops.nodeDisp(node_j, 1) * xfact
     uy_j = ops.nodeDisp(node_j, 2) * xfact
 
+    # Magnitud del desplazamiento en el miembro
+    desplazamiento_mag = math.sqrt((ux_j - ux_i)**2 + (uy_j - uy_i)**2)
+    desplazamientos_magnitud.append(desplazamiento_mag)
+
     # Línea sin deformación
     line_original = pv.Line([ix, iy, 0], [jx, jy, 0])
     plotter.add_mesh(line_original, color='grey', line_width=1, label="Estructura sin deformación")
 
     # Línea deformada
     line_deformada = pv.Line([ix + ux_i, iy + uy_i, 0], [jx + ux_j, jy + uy_j, 0])
-    plotter.add_mesh(line_deformada, color='red', line_width=2, label="Estructura deformada")
+    # Asignar el desplazamiento como un valor escalar
 
-# Configuración de visualización
-plotter.add_legend([["Estructura sin deformación", "grey"], ["Estructura deformada", "red"]])
-plotter.set_xlabel("Distancia X (m)")
-plotter.set_ylabel("Distancia Y (m)")
-plotter.set_zlabel("Distancia Z (m)")
-plotter.add_axes()
-plotter.show_grid()
+    plotter.add_mesh(line_deformada, scalars=[desplazamiento_mag], cmap="inferno", line_width=2,multi_colors=True, label="Estructura deformada")
+
+
+
+# Mostrar los límites y añadir etiquetas a los ejes
+# Mostrar los límites y añadir títulos a los ejes usando xtitle, ytitle, ztitle
+plotter.show_bounds(
+    grid='back',             # Muestra la cuadrícula en el fondo
+    location='outer',        # Coloca las etiquetas fuera de la ventana gráfica
+    xtitle='Distancia X (m)', # Título para el eje X
+    ytitle='Distancia Y (m)'
+)
+
 plotter.view_xy()
-# Guardar la visualización como una imagen
-plotter.screenshot("E0_pyvista.png")
-plotter.close()
+plotter.show_axes()
+# Añadir un título a la visualización
+plotter.add_text("Estructura Deformada y no deformada", position="upper_edge", font_size=12, color="black")
 
+# Guardar la visualización como una imagen
+plotter.screenshot("E0_pyvista_heatmap.png")
+plotter.close()
