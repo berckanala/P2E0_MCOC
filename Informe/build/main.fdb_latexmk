@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1729610634.85947 "c:/Users/A/Desktop/Uandes/8vo_semestre/MCOC/Proyecto-2-MCOC/P2E0_MCOC/Informe/main.tex" "build/main.pdf" "main" 1729610637.14549 0
+["pdflatex"] 1729625442.11971 "c:/Users/A/Desktop/Uandes/8vo_semestre/MCOC/Proyecto-2-MCOC/P2E0_MCOC/Informe/main.tex" "build/main.pdf" "main" 1729625444.31418 0
   "C:/Users/A/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1728319494 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/A/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs10.tfm" 1727097595 688 37338d6ab346c2f1466b29e195316aa4 ""
   "C:/Users/A/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1710856774 24221282 a5876e0c9e755de8e44ee96826d1c75a ""
@@ -189,16 +189,17 @@
   "C:/Users/A/Desktop/Programar/miketex/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/A/Desktop/Programar/miketex/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "LOGO_UNIVERSIDAD.jpg" 1728514071 209820 2134e729a4493a99d3d34c719af1eecf ""
-  "build/main.aux" 1729610636 3013 31534ed0159ff628409de371175a65de "pdflatex"
-  "build/main.lof" 1729610636 241 b64d00c720f547dd89b72a146e329109 "pdflatex"
-  "build/main.out" 1729610636 1546 60c38be1ef927a57d8d8944d129fc9bb "pdflatex"
-  "build/main.toc" 1729610636 782 be7ec70bd2ac4db5288b686d97a36f6d "pdflatex"
-  "build/resumen.aux" 1729610636 710 e11257429a47c249b26ae9e5ba74c86b "pdflatex"
+  "build/main.aux" 1729625444 3266 9f3da523b94b3f4a9b2fef8e33cf321c "pdflatex"
+  "build/main.lof" 1729625444 363 7b9a3125d97554e6ee77a418aae95ba2 "pdflatex"
+  "build/main.out" 1729625444 1546 60c38be1ef927a57d8d8944d129fc9bb "pdflatex"
+  "build/main.toc" 1729625444 782 a3774476ccdf094075a2e39fbde95329 "pdflatex"
+  "build/resumen.aux" 1729625443 710 e11257429a47c249b26ae9e5ba74c86b "pdflatex"
   "build/resumen.tex" 0 -1 0 ""
-  "c:/Users/A/Desktop/Uandes/8vo_semestre/MCOC/Proyecto-2-MCOC/P2E0_MCOC/Informe/main.tex" 1729610633 15758 9a9bff96e12e1b8028747024f1cb8425 ""
+  "c:/Users/A/Desktop/Uandes/8vo_semestre/MCOC/Proyecto-2-MCOC/P2E0_MCOC/Informe/main.tex" 1729625438 16171 ab6253cae86e3b031f2afcac6c801901 ""
   "imagenes/E0_matplotlib.png" 1729546504 49939 ec0228256ff05a08fb6398aee63a5875 ""
+  "imagenes/E0_pyvista_heatmap.png" 1729625036 42203 d6b93fe432fd8bcdb918a7b8a1cebb8e ""
   "imagenes/diagrama.png" 1729547887 89116 33e2c433b964ed0693b3a50eab9dc604 ""
-  "main.tex" 1729610633 15758 9a9bff96e12e1b8028747024f1cb8425 ""
+  "main.tex" 1729625438 16171 ab6253cae86e3b031f2afcac6c801901 ""
   "resumen.tex" 0 -1 0 ""
   (generated)
   "build/main.aux"

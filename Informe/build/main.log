@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.3.19)  22 OCT 2024 12:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.3.19)  22 OCT 2024 16:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -853,7 +853,7 @@ l.173 \newpage
 
 
 ]
-<imagenes/diagrama.png, id=70, 424.58624pt x 257.763pt>
+<imagenes/diagrama.png, id=72, 424.58624pt x 257.763pt>
 File: imagenes/diagrama.png Graphic file (type png)
 <use imagenes/diagrama.png>
 Package pdftex.def Info: imagenes/diagrama.png  used on input line 183.
@@ -912,31 +912,46 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.4}) has 
                                                   \__shipout_drop_firstpage_...
 l.336 \newpage
               ]
-<imagenes/E0_matplotlib.png, id=107, 578.16pt x 289.08pt>
+<imagenes/E0_matplotlib.png, id=109, 578.16pt x 289.08pt>
 File: imagenes/E0_matplotlib.png Graphic file (type png)
 <use imagenes/E0_matplotlib.png>
 Package pdftex.def Info: imagenes/E0_matplotlib.png  used on input line 340.
 (pdftex.def)             Requested size: 443.57848pt x 221.78947pt.
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
-Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 364.
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 345.
 (pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
  [5
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.364 \newpage
+l.345 \newpage
+               <./imagenes/E0_matplotlib.png>]
+<imagenes/E0_pyvista_heatmap.png, id=117, 1027.84pt x 770.88pt>
+File: imagenes/E0_pyvista_heatmap.png Graphic file (type png)
+<use imagenes/E0_pyvista_heatmap.png>
+Package pdftex.def Info: imagenes/E0_pyvista_heatmap.png  used on input line 350.
+(pdftex.def)             Requested size: 399.21791pt x 299.41867pt.
+File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
+<use LOGO_UNIVERSIDAD.jpg>
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 374.
+(pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
+ [6
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.374 \newpage
               
 pdfTeX warning (ext4): destination with the same identifier (name{table.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.364 \newpage
-               <./imagenes/E0_matplotlib.png>]
+l.374 \newpage
+               <./imagenes/E0_pyvista_heatmap.png (PNG copy)>]
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
-Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 371.
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 381.
 (pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
- [6] (c:\Users\A\Desktop\Uandes\8vo_semestre\MCOC\Proyecto-2-MCOC\P2E0_MCOC\Informe\build\main.aux
+ [7] (c:\Users\A\Desktop\Uandes\8vo_semestre\MCOC\Proyecto-2-MCOC\P2E0_MCOC\Informe\build\main.aux
 LaTeX Info: Redefining \. on input line 15.
 LaTeX Info: Redefining \% on input line 15.
  (c:\Users\A\Desktop\Uandes\8vo_semestre\MCOC\Proyecto-2-MCOC\P2E0_MCOC\Informe\build\resumen.aux))
@@ -948,17 +963,17 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 60C38BE1EF927A57D8D8944D129FC9BB;1546.
  ) 
 Here is how much of TeX's memory you used:
- 27428 strings out of 474486
- 504696 string characters out of 5747519
- 1937542 words of memory out of 5000000
- 49101 multiletter control sequences out of 15000+600000
+ 27438 strings out of 474486
+ 504982 string characters out of 5747519
+ 1938542 words of memory out of 5000000
+ 49109 multiletter control sequences out of 15000+600000
  596235 words of font info for 143 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,16n,87p,1211b,547s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/A/Desktop/Programar/miketex/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/A/Desktop/Programar/miketex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/A/Desktop/Programar/miketex/fonts/type1/urw/symbol/usyr.pfb><C:/Users/A/Desktop/Programar/miketex/fonts/type1/urw/symbol/usyr.pfb><C:/Users/A/Desktop/Programar/miketex/fonts/type1/urw/times/utmb8a.pfb><C:/Users/A/Desktop/Programar/miketex/fonts/type1/urw/times/utmr8a.pfb><C:/Users/A/Desktop/Programar/miketex/fonts/type1/urw/times/utmri8a.pfb>
-Output written on c:\Users\A\Desktop\Uandes\8vo_semestre\MCOC\Proyecto-2-MCOC\P2E0_MCOC\Informe\build\main.pdf (8 pages, 420023 bytes).
+Output written on c:\Users\A\Desktop\Uandes\8vo_semestre\MCOC\Proyecto-2-MCOC\P2E0_MCOC\Informe\build\main.pdf (9 pages, 464171 bytes).
 PDF statistics:
- 159 PDF objects out of 1000 (max. 8388607)
- 24 named destinations out of 1000 (max. 500000)
- 42602 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 168 PDF objects out of 1000 (max. 8388607)
+ 26 named destinations out of 1000 (max. 500000)
+ 42607 words of extra memory for PDF output out of 42996 (max. 10000000)
 
