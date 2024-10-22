@@ -198,24 +198,24 @@ Para poder calcular la fuerza en las barras del enrejado, lo que se hizo primero
   \hline
   \textbf{Miembro} & \textbf{Fuerza axial (kN)} \\
   \hline
-  1  & -15.0   \\
-  2  & -89.41 \\
-  3  & 0.0     \\
-  4  & 0.0    \\
-  5  & -30.0   \\
-  6  & -71.887 \\
-  7  & 0.0  \\
-  8  & 0.0   \\
-  9  & -30.0   \\
-  10 & -64.33 \\
-  11 & 0.0  \\
-  12 & 0.0    \\
-  13 & -70.07 \\
-  14 & -30.0   \\
-  15 & 0.0     \\
-  16 & 0.0    \\
-  17 & -86.5 \\
-  18 & -15.0   \\
+  A,L  & -15.0   \\
+  A,B  & -89.41 \\
+  B,L  & 0.0     \\
+  K,L  & 0.0    \\
+  B,K  & -30.0   \\
+  B,C  & -71.887 \\
+  K,J  & 0.0  \\
+  K,C  & 0.0   \\
+  J,C  & -30.0   \\
+  C,D & -64.33 \\
+  J,D & 0.0  \\
+  I,H & 0.0    \\
+  D,E & -70.07 \\
+  H,E & -30.0   \\
+  H,G & 0.0     \\
+  E,G & 0.0    \\
+  E,F & -86.5 \\
+  G,F & -15.0   \\
   \hline
   \end{tabular}
   \caption{Fuerzas axiales en cada barra del enrejado.}
@@ -287,24 +287,24 @@ Lo primero que se hizo fue definir los nodos y las barras del enrejado. Luego, s
   \hline
   \textbf{Miembro} & \textbf{Fuerza axial (kN)} \\
   \hline
-  1  & -15.0   \\
-  2  & -89.411 \\
-  3  & 0.0     \\
-  4  & -0.0    \\
-  5  & -30.0   \\
-  6  & -71.873 \\
-  7  & -0.008  \\
-  8  & 0.008   \\
-  9  & -30.0   \\
-  10 & -64.313 \\
-  11 & -0.008  \\
-  12 & -0.0    \\
-  13 & -70.062 \\
-  14 & -30.0   \\
-  15 & 0.0     \\
-  16 & -0.0    \\
-  17 & -86.488 \\
-  18 & -15.0   \\
+  A,L & -15.0   \\
+  A,B & -89.411 \\
+  B,L & 0.0     \\
+  K,L & -0.0    \\
+  B,K & -30.0   \\
+  B,C & -71.873 \\
+  K,J & -0.008  \\
+  K,C & 0.008   \\
+  J,C & -30.0   \\
+  C,D & -64.313 \\
+  J,D & -0.008  \\
+  I,H & -0.0    \\
+  D,E & -70.062 \\
+  H,E & -30.0   \\
+  H,G & 0.0     \\
+  E,G & -0.0    \\
+  E,F & -86.488 \\
+  G,F & -15.0   \\
   \hline
   \end{tabular}
   \caption{Fuerzas axiales en cada barra del enrejado.}
@@ -317,17 +317,17 @@ Lo primero que se hizo fue definir los nodos y las barras del enrejado. Luego, s
   \hline
   \textbf{Nodo} & \textbf{ux (mm)} & \textbf{uy (mm)} \\
   \hline
-  1  & 0.0    & 0.0    \\
-  2  & -1.539 & -0.13  \\
-  3  & -1.096 & 0.7    \\
-  4  & -1.539 & 0.608  \\
-  5  & -1.522 & 1.116  \\
-  6  & -1.539 & 1.11   \\
-  D  & -1.539 & -3.055 \\
-  8  & -0.972 & -1.396 \\
-  9  & -1.539 & -1.453 \\
-  10 & -1.539 & -0.087 \\
-  11 & 0.0    & 0.0    \\
+  A  & 0.0    & 0.0    \\
+  L  & -1.539 & -0.13  \\
+  B  & -1.096 & 0.7    \\
+  K  & -1.539 & 0.608  \\
+  C  & -1.522 & 1.116  \\
+  J  & -1.539 & 1.11   \\
+  D,I  & -1.539 & -3.055 \\
+  E  & -0.972 & -1.396 \\
+  H  & -1.539 & -1.453 \\
+  G & -1.539 & -0.087 \\
+  F & 0.0    & 0.0    \\
   \hline
   \end{tabular}
   \caption{Desplazamientos en los nodos}
