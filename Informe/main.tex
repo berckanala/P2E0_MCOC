@@ -175,16 +175,21 @@
 %ACÁ EMPIEZA EL INFORME
 \setcounter{page}{1}
 \section{Introducción}
+En la ingeniería civil, es fundamental saber las fuerzas que actúan en una estructura. Ya que, en base a estas fuerzas, se puede determinar la geometría de las barras o componentes de la estructura, para garantizar que esta sea segura y cumpla con los requerimientos de diseño. Por lo tanto, es necesario contar con herramientas que permitan calcular estas fuerzas de manera rápida y precisa. Para ello, se pueden utilizar métodos manuales o computacionales.
+
 
 \begin{figure}[h]
   \centering
   \includegraphics[width=0.8\textwidth]{imagenes/diagrama.png}
   \caption{Enrejado a analizar.}
+  \label{fig:0}
 \end{figure}
+
+El objetivo de esta tarea fue calcular las fuerzas en las barras, determinar propiedades y la geometría de las barras y, finalmente, los desplazamientos en los nodos del enrejado mostrado en la figura \ref{fig:0} ocupando un método manual y otro computacional. Por un lado, el método manual fue utilizar equilibrio de fuerzas en los nodos y desplazamientos virtuales. Por otro lado, el método computacional fue utilizar la librería OpenSeesPy, la cual permite modelar estructuras y calcular fuerzas y desplazamientos. 
 
 \newpage
 \section{Método Manual}
-Para poder calcular la fuerza en las barras del enrejado, lo que se hizo primero fue calcular la fuerza en las reacciones. Luego, se procedió a calcular la fuerza en cada barra del enrejado con equilibrio de fuerzas en cada nodo. El procedimiento está detallado en el siguiente link: 
+Para poder calcular la fuerza en las barras del enrejado, lo que se hizo primero fue calcular la fuerza en las reacciones. Luego, se procedió a calcular la fuerza en cada barra del enrejado con equilibrio de fuerzas en cada nodo. El procedimiento está detallado en el siguiente link: \href{https://github.com/berckanala/P2E0_MCOC/tree/main/desarrollo}{Desarrollo}
 
 \subsection{Resultados Método Manual}
 \begin{table}[h!]
@@ -194,22 +199,22 @@ Para poder calcular la fuerza en las barras del enrejado, lo que se hizo primero
   \textbf{Miembro} & \textbf{Fuerza axial (kN)} \\
   \hline
   1  & -15.0   \\
-  2  & -89.411 \\
+  2  & -89.41 \\
   3  & 0.0     \\
-  4  & -0.0    \\
+  4  & 0.0    \\
   5  & -30.0   \\
-  6  & -71.873 \\
-  7  & -0.008  \\
-  8  & 0.008   \\
+  6  & -71.887 \\
+  7  & 0.0  \\
+  8  & 0.0   \\
   9  & -30.0   \\
-  10 & -64.313 \\
-  11 & -0.008  \\
-  12 & -0.0    \\
-  13 & -70.062 \\
+  10 & -64.33 \\
+  11 & 0.0  \\
+  12 & 0.0    \\
+  13 & -70.07 \\
   14 & -30.0   \\
   15 & 0.0     \\
-  16 & -0.0    \\
-  17 & -86.488 \\
+  16 & 0.0    \\
+  17 & -86.5 \\
   18 & -15.0   \\
   \hline
   \end{tabular}
